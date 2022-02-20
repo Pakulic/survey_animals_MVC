@@ -1,0 +1,15 @@
+# Redirection de la page index :
+
+DirectoryIndex index.php?article=index
+# Activation du module de réécriture d'URL :
+RewriteEngine on
+
+# Articles:
+
+RewriteRule ^merci-sondage-animaux$ index.php?article=form [L]
+RewriteRule ^accueil$ index.php?article=index [L]
+
+
+
+
+

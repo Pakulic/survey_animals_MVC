@@ -1,0 +1,264 @@
+/* Configuration responsive  */
+@media screen and (max-width: 770px) {
+	/* hauteur du header  */
+	.header {
+		min-height: 30%;
+		flex-direction: column;
+	}
+	/* largeur des titres  */
+	.header div {
+		width: 90%;
+	}
+	/* taille du titre h1 */
+	.header h1 {
+		font-size: 1.5em;
+	}
+	/* taille du titre h2 */
+	.header h2 {
+		font-size: 0.8em;
+	}
+	/* taille de l'icone*/
+	#iconPet {
+		font-size: 3em;
+	}
+	/* hauteur de la section principale  */
+	.main {
+		height: 65%;
+		font-size: 1.2em;
+	}
+	#formulaire {
+		height: 100%;
+	}
+	/* largeur de la section formulaire*/
+	.container {
+		width: 96%;
+		height: 90%;
+		padding: 5% 1%;
+	}
+	.form {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		margin: 0 auto;
+		width: 90%;
+		min-height: 50%;
+	}
+}
+@media (min-width: 770px) {
+	/* hauteur du header  */
+	.header {
+		min-height: 15%;
+		flex-direction: row;
+	}
+	/* largeur du titre*/
+	.header div {
+		width: 40%;
+	}
+	/* taille de l'icone*/
+	#iconPet {
+		font-size: 5em;
+	}
+	/* taille des titres*/
+	.header h1 {
+		font-size: 1.6em;
+	}
+	.header h2 {
+		font-size: 1em;
+	}
+	/* largeur de la section formulaire*/
+	.container {
+		width: 50%;
+		height: 100%;
+	}
+	.form {
+		width: 90%;
+		margin: 0 auto;
+	}
+	/* hauteur de la section principale  */
+	.main {
+		height: 80%;
+		font-size: 1.5em;
+	}
+	#formulaire {
+		height: 100%;
+	}
+}
+/* Configuration générale  */
+html {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 100%;
+}
+a {
+	text-decoration-color: #ff5e94;
+}
+
+/* Configuration header  */
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #dcdcdc;
+	font-family: 'Manrope', sans-serif;
+	color: #292563;
+	text-align: center;
+	padding: 0 2%;
+}
+
+#iconPet {
+	color: #292563;
+}
+
+#iconPet :active {
+	color: #292563;
+}
+
+.header h1 {
+	margin: 0;
+	padding: 1%;
+}
+.header h2 {
+	font-weight: 400;
+	margin: 0;
+}
+
+/* Configuration main et formulaires   */
+.main {
+	background-image: url('../img/fond_ecran_sondage_animaux.jpg');
+	object-fit: cover;
+	font-family: 'Roboto', sans-serif;
+	color: #292563;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	text-align: center;
+	background-color: white;
+}
+.none {
+	display: none;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+}
+.form button {
+	margin: auto;
+}
+
+/* Configuration titre du formulaire  */
+
+.container h3 {
+	font-size: 1.2em;
+	margin: 0.5%;
+	color: #ff5e94;
+}
+/* Configuration sous-titre du formulaire  */
+
+.container p {
+	font-size: 0.7em;
+	font-style: italic;
+	color: #ff5e94;
+}
+
+/* Configuration des input radio et checkbox  */
+
+input[type='radio'],
+input[type='checkbox'] {
+	opacity: 0;
+	position: absolute;
+}
+.labelforcheck {
+	display: block;
+	padding: 1%;
+}
+input[type='radio'] + .labelforcheck,
+input[type='checkbox'] + .labelforcheck {
+	border: 1px solid #ff5e94;
+	margin: 0.5%;
+}
+input[type='radio']:hover + .labelforcheck,
+input[type='checkbox']:hover + .labelforcheck {
+	background-color: #fdebf2;
+	cursor: pointer;
+}
+input[type='radio']:checked + .labelforcheck,
+input[type='checkbox']:checked + .labelforcheck {
+	background-color: #fdebf2;
+}
+input[type='text'] {
+	width: 98%;
+	height: 3em;
+	border: 1px solid #ff5e94;
+	font-family: 'Roboto';
+	font-size: 0.9em;
+	text-align: center;
+	color: #292563;
+}
+
+/* Configuration input "species"  */
+#petSpecies {
+	height: 2em;
+	margin-bottom: 1%;
+}
+
+/* Configuration icone "ajouter une ligne"  */
+#btnAddSpecies {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3em;
+	width: 8em;
+	margin: auto;
+}
+#btnAddSpecies img {
+	height: 1.2em;
+}
+#btnAddSpecies p {
+	color: #292563;
+	font-style: normal;
+}
+/* Configuration du bouton valider  */
+
+.btnValider {
+	height: 2em;
+	font-size: 0.7em;
+	font-weight: 700;
+	width: 8em;
+	margin-top: 1%;
+	color: white;
+	background-color: #ff5e94;
+	border: 0;
+	cursor: pointer;
+}
+.btnValider:hover,
+.btnValider:active {
+	background-color: #fdebf2;
+	color: #ff5e94;
+	border: 1px solid #ff5e94;
+	cursor: pointer;
+}
+
+/* configuration footer */
+.footer {
+	background-color: #dcdcdc;
+	height: 5%;
+	text-align: center;
+	font-family: 'Manrope', sans-serif;
+	color: #292563;
+}
+.footer p {
+	font-size: 1em;
+	margin: 0;
+}
