@@ -14,10 +14,10 @@ class Article
     //je démarre le tampon memoire
     ob_start();
     //je charge le fichier vue
-    require "template/articles/$file.html.php";
+    require "Template/articles/$file.html.php";
     //je le rend dans la variable $pageContent
     $pageContent = ob_get_clean();
     //je l'affiche dans le template 'base'
-    require "template/base.html.php";
+    require "Template/base.html.php";
   }
 }
