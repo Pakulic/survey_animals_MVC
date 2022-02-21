@@ -12,8 +12,8 @@ class Database
     // try {
     $pdo = new \PDO(
       'mysql:host=localhost;dbname=exo_survey_animal;charset=utf8',
-      'root',
-      '',
+      'survey',
+      'surveyanimal13!',
       [
         \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
         \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
