@@ -29,44 +29,48 @@ try {
               /*  dans le cas où la variable est égale à 'havePet' - l'utilisateur a un animal */
             case 'havePet':
               // on envoie vers le controlleur qui controle et enregistre les données en base de donnés
-              if ($controlAddUser->AddUserHavePet()) {
+              // if ($controlAddUser->AddUserHavePet()) {
+                $controlAddUser->AddUserHavePet();
                 //on renvoie vers la page "merci"
                 $article->thanks();
-              } else {
-                throw new Exception('Vos données n\'ont pas pu être enregistrées. Veuillez réessayer  et contacter l\'administrateur si le problème persiste ');
-              }
+              // } else {
+              //   throw new Exception('Vos données n\'ont pas pu être enregistrées. Veuillez réessayer  et contacter l\'administrateur si le problème persiste ');
+              // }
               break;
               /*  dans le cas où la variable est égale à 'noHavePet' - l'utilisateur aime les animaux mais n'en possède pas */
             case 'noHavePet':
               // on envoie vers le controlleur qui controle et enregistre les données en base de donnés
-              if ($controlAddUser->AddUserNoHavePet()) {
+              // if ($controlAddUser->AddUserNoHavePet()) {
+              $controlAddUser->AddUserNoHavePet();
                 //on renvoie vers la page "merci"
-                $article->thanks();
-              } else {
-                throw new Exception('Vos données n\'ont pas pu être enregistrées. Veuillez réessayer  et contacter l\'administrateur si le problème persiste ');
-              }
+              $article->thanks();
+              // } else {
+              //   throw new Exception('Vos données n\'ont pas pu être enregistrées. Veuillez réessayer  et contacter l\'administrateur si le problème persiste ');
+              // }
               exit;
               break;
               /*  dans le cas où la variable est égale à 'notLikeAnimal' - l'utilisateur n'aime pas les animaux*/
             case 'notLikeAnimal':
               // on envoie vers le controlleur qui controle et enregistre les données en base de donnés
-              if ($controlAddUser->AddUserNoLikeAnimal()) {
+              // if ($controlAddUser->AddUserNoLikeAnimal()) {
+                $controlAddUser->AddUserNoLikeAnimal();
                 //on renvoie vers la page "merci"
                 $article->thanks();
-              } else {
-                throw new Exception('Vos données n\'ont pas pu être enregistrées. Veuillez réessayer  et contacter l\'administrateur si le problème persiste ');
-              }
+              // } else {
+              //   throw new Exception('Vos données n\'ont pas pu être enregistrées. Veuillez réessayer  et contacter l\'administrateur si le problème persiste ');
+              // }
               exit;
               break;
               /*  dans le cas où la variable est égale à 'itdependsOn' - l'utilisateur a répondu "cela dépend*/
             case 'itdependsOn':
               // on envoie vers le controlleur qui controle et enregistre les données en base de donnés
-              if ($controlAddUser->AddUserItDependsOn()) {
+              // if ($controlAddUser->AddUserItDependsOn()) {
+                $controlAddUser->AddUserItDependsOn();
                 //on renvoie vers la page "merci"
                 $article->thanks();
-              } else {
-                throw new Exception('Vos données n\'ont pas pu être enregistrées. Veuillez réessayer  et contacter l\'administrateur si le problème persiste ');
-              }
+              // } else {
+              //   throw new Exception('Vos données n\'ont pas pu être enregistrées. Veuillez réessayer  et contacter l\'administrateur si le problème persiste ');
+              // }
               exit;
               break;
               // on renvoie l'internaute par défaut sur la page d'accueil

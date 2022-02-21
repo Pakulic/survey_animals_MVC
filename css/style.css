@@ -32,7 +32,7 @@
 	/* largeur de la section formulaire*/
 	.container {
 		width: 96%;
-		height: 90%;
+		height: 80%;
 		padding: 5% 1%;
 	}
 	.form {
@@ -41,7 +41,7 @@
 		justify-content: space-around;
 		margin: 0 auto;
 		width: 90%;
-		min-height: 50%;
+		min-height: 40%;
 	}
 }
 @media (min-width: 770px) {
@@ -180,7 +180,6 @@ input[type='checkbox'] {
 	position: absolute;
 }
 .labelforcheck {
-	display: block;
 	padding: 1%;
 }
 input[type='radio'] + .labelforcheck,
@@ -199,17 +198,18 @@ input[type='checkbox']:checked + .labelforcheck {
 }
 input[type='text'] {
 	width: 98%;
-	height: 3em;
+	height: 2em;
 	border: 1px solid #ff5e94;
 	font-family: 'Roboto';
 	font-size: 0.9em;
 	text-align: center;
 	color: #292563;
+	margin: 0.5%;
 }
 
 /* Configuration input "species"  */
-#petSpecies {
-	height: 2em;
+.petSpecies {
+	height: 1em;
 	margin-bottom: 1%;
 }
 
@@ -232,7 +232,7 @@ input[type='text'] {
 /* Configuration du bouton valider  */
 
 .btnValider {
-	height: 2em;
+	height: 2.5em;
 	font-size: 0.7em;
 	font-weight: 700;
 	width: 8em;
@@ -252,6 +252,9 @@ input[type='text'] {
 
 /* configuration footer */
 .footer {
+	display: block;
+	position: relative;
+	bottom:0;
 	background-color: #dcdcdc;
 	height: 5%;
 	text-align: center;

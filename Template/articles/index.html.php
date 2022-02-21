@@ -29,8 +29,8 @@
         <div class="form">
           <h3><label for="petSpecies">Dites-nous le(s)quel(s)</label></h3>
           <div>
-            <input type="text" id="petSpecies" name="species[0]">
-            <input type="text" id="petSpecies" name="species[1]">
+            <input type="text" class="petSpecies" name="species[0]">
+            <input type="text" class="petSpecies" name="species[1]">
           </div>
           <div id="divAddSpecies"></div>
           <div id="btnAddSpecies">

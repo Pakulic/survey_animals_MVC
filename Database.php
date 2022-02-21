@@ -9,19 +9,19 @@ class Database
 
   protected function getPDO()
   {
-    // try {
-    $pdo = new \PDO(
-      'mysql:host=ccrfrcbamo264.mysql.db:3306;dbname=ccrfrcbamo264;charset=utf8',
-      'vTuTrcXPtCK4',
-      '',
-      [
-        \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
-        \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
-      ]
-    );
-    // } catch (\PDOException $e) {
-    //   echo  $e->getMessage();
-    // }
+    try {
+      $pdo = new \PDO(
+        'mysql:host=db5006696221.hosting-data.io:3306;dbname=dbs5540466;charset=utf8',
+        'dbu2300196',
+        'survey_animals@ionos2022',
+        [
+          \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
+          \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
+        ]
+      );
+    } catch (\PDOException $e) {
+      echo  $e->getMessage() ;
+    }
     return $pdo;
   }
 }
